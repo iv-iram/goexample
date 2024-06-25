@@ -1,5 +1,5 @@
 
-package main
+package functions
 
 import "fmt"
 
@@ -21,7 +21,7 @@ func plusPlus(a, b, c int) int {
 	return a + b + c
 }
 
-func main() {
+func Functions() {
 
 	// Call a function just as you'd expect, with
 	// `name(args)`.

@@ -3,10 +3,10 @@ Go has various value types including strings, integers, floats, booleans, etc. H
 Strings, which can be added together with +.   
 Integers and floats.*/
 
-package main
+package values
 import "fmt"
 
-func main(){
+func Values(){
 	fmt.Println("go"+"lang")
 	fmt.Println("1+1=",1+1)
 	fmt.Println("7.0/3.0 =",7.0/3.0)

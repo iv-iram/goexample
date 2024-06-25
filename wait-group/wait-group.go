@@ -1,4 +1,4 @@
-package main
+package wait_group
 
 import (
     "fmt"
@@ -16,7 +16,7 @@ func worker(id int) {
     fmt.Printf("Worker %d done\n", id)
 }
 
-func main() {
+func Wait_group() {
 
     var wg sync.WaitGroup
 

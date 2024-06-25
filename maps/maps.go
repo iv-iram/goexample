@@ -1,11 +1,11 @@
-package main
+package maps
 
 import (
 	"fmt"
 	"maps"
 )
 
-func main(){
+func Maps(){
 	m:=make(map[string]int) //To create an empty map, use the builtin make: make(map[key-type]val-type).
 
 	m["k1"] = 7

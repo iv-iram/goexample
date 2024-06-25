@@ -1,12 +1,11 @@
-package main
+package slice
 
 import (
-    "fmt"
-    
+    "fmt"   
     "slices"
 )
 
-func main() {
+func Slice() {
 
     var s []string
     fmt.Println("uninit:", s, s == nil, len(s) == 0)

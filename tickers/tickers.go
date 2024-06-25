@@ -2,14 +2,14 @@
 //Timers are for when you want to do something once in the future - tickers are for when you want to do something repeatedly at regular intervals.
 // Here’s an example of a ticker that ticks periodically until we stop it.
 
-package main
+package tickers
 
 import (
     "fmt"
     "time"
 )
 
-func main() {
+func Tickers() {
 
     ticker := time.NewTicker(500 * time.Millisecond)
     done := make(chan bool)

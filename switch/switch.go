@@ -1,10 +1,10 @@
-package main
+package switch_go
 import (
 	"fmt"
 	"time"
 )
 
-func main(){
+func Switch_go(){
 	i:=2
 	fmt.Print("Write",i," as ")
 	switch i {

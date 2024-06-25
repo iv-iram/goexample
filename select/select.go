@@ -1,11 +1,11 @@
-package main
+package select_go
 
 import (
     "fmt"
     "time"
 )
 
-func main() {
+func Select_go() {
 
     c1 := make(chan string)
     c2 := make(chan string)

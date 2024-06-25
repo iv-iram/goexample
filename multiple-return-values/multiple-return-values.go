@@ -1,7 +1,7 @@
 // Go has built-in support for _multiple return values_.
 
 
-package main
+package multiple_return_functions
 
 import "fmt"
 
@@ -11,7 +11,7 @@ func vals() (int, int) {
 	return 3, 7
 }
 
-func main() {
+func Multiple_return_functions() {
 
 	// Here we use the 2 different return values from the
 	// call with _multiple assignment_.

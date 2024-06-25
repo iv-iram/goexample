@@ -2,7 +2,7 @@
 // can be called with any number of trailing arguments.
 
 
-package main
+package variadic_functions
 
 import "fmt"
 
@@ -20,7 +20,7 @@ func sum(nums ...int) {
 	fmt.Println(total)
 }
 
-func main() {
+func Variadic_functions() {
 
 	// Variadic functions can be called in the usual way
 	// with individual arguments.

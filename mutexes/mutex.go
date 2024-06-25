@@ -1,4 +1,4 @@
-package main
+package mutex_go
 
 import (
     "fmt"
@@ -17,7 +17,7 @@ func (c *Container) inc(name string) {
     c.counters[name]++
 }
 
-func main() {
+func Mutex_go() {
     c := Container{
 
         counters: map[string]int{"a": 0, "b": 0},

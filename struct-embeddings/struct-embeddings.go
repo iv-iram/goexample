@@ -1,4 +1,4 @@
-package main
+package struct_embeddings
 
 import "fmt"
 
@@ -15,7 +15,7 @@ type container struct {
     str string
 }
 
-func main() {
+func Struct_embeddings() {
 
     co := container{
         base: base{

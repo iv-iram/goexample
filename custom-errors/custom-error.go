@@ -1,4 +1,4 @@
-package main
+package custom_errors
 
 import (
     "errors"
@@ -22,7 +22,7 @@ func f(arg int) (int, error) {
     return arg + 3, nil
 }
 
-func main() {
+func Custom_errors() {
 
     _, err := f(42)
     var ae *argError

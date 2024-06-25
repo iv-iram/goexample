@@ -1,4 +1,4 @@
-package main
+package atomic_counters
 
 import (
     "fmt"
@@ -6,7 +6,7 @@ import (
     "sync/atomic"
 )
 
-func main() {
+func Atomic_counters() {
 
     var ops atomic.Uint64
 

@@ -1,4 +1,4 @@
-package main
+package channel_directions
 
 import "fmt"
 
@@ -11,7 +11,7 @@ func pong(pings <-chan string, pongs chan<- string) {
     pongs <- msg
 }
 
-func main() {
+func Channel_directions() {
     pings := make(chan string, 1)
     pongs := make(chan string, 1)
     ping(pings, "passed message")

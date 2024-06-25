@@ -1,13 +1,13 @@
 //In Go, the concept of a character is called a rune - it’s an integer that represents a Unicode code point.
 
-package main
+package string_runes
 
 import (
     "fmt"
     "unicode/utf8"
 )
 
-func main() {
+func String_runes() {
 
     //s is a string assigned a literal value representing the word “hello” in the Thai language. Go string literals are UTF-8 encoded text.
     const s = "สวัสดี"
