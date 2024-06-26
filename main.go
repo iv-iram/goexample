@@ -45,136 +45,184 @@ import (
 	"github.com/iv-iram/goexamples/rate-limiting"
 	"github.com/iv-iram/goexamples/atomic-counters"
 	"github.com/iv-iram/goexamples/mutexes"
+	"github.com/iv-iram/goexamples/defer"
 )
 
 func main() {
 	fmt.Println("Running hello-world example:")
 	hello_world.Hello_world()
+	fmt.Println("\n")
 
 	fmt.Println("Running values example:")
 	values.Values()
+	fmt.Println("\n")
 
 	fmt.Println("Running variables example:")
 	variables.Variables()
+	fmt.Println("\n")
 
 	fmt.Println("Running constants example:")
 	constants.Constants()
+	fmt.Println("\n")
 
 	fmt.Println("Running for example:")
 	forloop.Forloop()
+	fmt.Println("\n")
 
 	fmt.Println("Running if-else example:")
 	ifelse.If_else()
+	fmt.Println("\n")
 
 	fmt.Println("Running switch example:")
 	switchcase.Switch_go()
+	fmt.Println("\n")
 
 	fmt.Println("Running arrays example:")
 	arrays.Arrays()
+	fmt.Println("\n")
 
 	fmt.Println("Running slices example:")
 	slice.Slice()
+	fmt.Println("\n")
 
 	fmt.Println("Running maps example:")
 	maps.Maps()
+	fmt.Println("\n")
 
 	fmt.Println("Running range example:")
 	ranges.Ranges()
+	fmt.Println("\n")
 
 	fmt.Println("Running functions example:")
 	functions.Functions()
+	fmt.Println("\n")
 
 	fmt.Println("Running multiple-return-values example:")
 	multipleReturns.Multiple_return_functions()
+	fmt.Println("\n")
 
 	fmt.Println("Running variadic-functions example:")
 	variadic_functions.Variadic_functions()
+	fmt.Println("\n")
 
 	fmt.Println("Running closures example:")
 	closures.Closures()
+	fmt.Println("\n")
 
 	fmt.Println("Running recursions example:")
 	recursions.Recursions()
+	fmt.Println("\n")
 
 	fmt.Println("Running pointer example:")
 	pointer.Pointer()
+	fmt.Println("\n")
 
 	fmt.Println("Running string-runes example:")
 	string_runes.String_runes()
+	fmt.Println("\n")
 
 	fmt.Println("Running structs example:")
 	struct_go.Struct_go()
+	fmt.Println("\n")
 
 	fmt.Println("Running methods example:")
 	methods.Methods()
+	fmt.Println("\n")
 
 	fmt.Println("Running interfaces example:")
 	interface_go.Interface_go()
+	fmt.Println("\n")
 
 	fmt.Println("Running enums example:")
 	enums.Enum()
+	fmt.Println("\n")
 
 	fmt.Println("Running struct-embeddings example:")
 	struct_embeddings.Struct_embeddings()
+	fmt.Println("\n")
 
 	fmt.Println("Running generics example:")
 	generics.Generics()
+	fmt.Println("\n")
 
 	fmt.Println("Running errors example:")
 	errors.Errors()
+	fmt.Println("\n")
 
 	fmt.Println("Running custom-errors example:")
 	custom_errors.Custom_errors()
+	fmt.Println("\n")
 
 	fmt.Println("Running goroutines example:")
 	goroutines.Goroutines()
+	fmt.Println("\n")
 
 	fmt.Println("Running channels example:")
 	channels.Channels()
+	fmt.Println("\n")
 
 	fmt.Println("Running channel-buffering example:")
 	channelBuffering.Channel_bufferings()
+	fmt.Println("\n")
 
 	fmt.Println("Running channel-synchronisation example:")
 	channelSync.Channel_synchronisations()
+	fmt.Println("\n")
 
 	fmt.Println("Running channel-directions example:")
 	channelDirections.Channel_directions()
+	fmt.Println("\n")
 
 	fmt.Println("Running select example:")
 	select_go.Select_go()
+	fmt.Println("\n")
 
 	fmt.Println("Running timeouts example:")
 	timeouts.Timeouts()
+	fmt.Println("\n")
 
 	fmt.Println("Running non-blocking-channel-operations example:")
 	nonBlocking.Non_blocking_channel()
+	fmt.Println("\n")
 
 	fmt.Println("Running closing-channels example:")
 	closing_channels.Closing_channels()
+	fmt.Println("\n")
 
 	fmt.Println("Running range-over-channels example:")
 	range_over_channels.Range_over_channels()
+	fmt.Println("\n")
 
 	fmt.Println("Running timers example:")
 	timers.Timers()
+	fmt.Println("\n")
 
 	fmt.Println("Running tickers example:")
 	tickers.Tickers()
+	fmt.Println("\n")
 
 	fmt.Println("Running worker-pools example:")
 	worker_pools.Worker_pools()
+	fmt.Println("\n")
 
 	fmt.Println("Running wait-group example:")
 	wait_group.Wait_group()
+	fmt.Println("\n")
 
 	fmt.Println("Running rate-limiting example:")
 	rate_limiting.Rate_limiting()
+	fmt.Println("\n")
 
 	fmt.Println("Running atomic-counters example:")
 	atomic_counters.Atomic_counters()
+	fmt.Println("\n")
 
 	fmt.Println("Running mutexes example:")
 	mutex_go.Mutex_go()
+	fmt.Println("\n")
+
+	fmt.Println("Running defer example")
+	defer_go.Defer_go()
+	fmt.Println("\n")
 
 }
