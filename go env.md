@@ -1,16 +1,18 @@
 # GO111MODULE: Controls module support. auto enables it when a go.mod file is present.
 
-``` GO111MODULE is an environment variable that controls the behavior of the Go module system. The Go module system is a feature introduced in Go version 1.11 to manage dependencies and versioning of packages in a Go project.
+GO111MODULE is an environment variable that controls the behavior of the Go module system. The Go module system is a feature introduced in Go version 1.11 to manage dependencies and versioning of packages in a Go project.
 
 Before the introduction of Go modules, Go relied on the GOPATH environment variable to manage dependencies. In this model, all Go packages and their dependencies were stored in a single directory called GOPATH. This approach was simple, but it led to several problems, including version conflicts, the need to manually manage dependencies, and difficulties in sharing code.
 
 The GO111MODULE environment variable has three possible values:
 
 1. GO111MODULE=off: This value disables the Go module system and uses the legacy GOPATH mode instead. In this mode, dependencies are downloaded and stored in the GOPATH directory, and the go command looks for packages in the directories specified by the GOPATH environment variable.
+
 2. GO111MODULE=on: This value enables the Go module system and uses modules to manage dependencies. In this mode, the go command looks for the go.mod file in the project directory to determine the required dependencies and their versions. If the file exists, the command downloads the required dependencies and stores them in a local cache, which can be shared between projects.
+
 3. GO111MODULE=auto: This value enables the Go module system if a go.mod file is present in the project directory. If no go.mod file is found, the legacy GOPATH mode is used.
 
-```
+
 GO111MODULE is usually set as an environment variable before running the Go command. For example, you can set it as follows:
 
 export GO111MODULE=on
@@ -22,10 +24,10 @@ GO111MODULE=on go build
 
 # GOBIN: Directory where go install installs binaries. Empty means it defaults to GOPATH/bin. some packages run .exe binaries
 
-```
+
 GOBIN: This environment variable defines the directory where Go binaries (executables) are installed when you use the go install command. It should be added to your system's PATH to execute these binaries conveniently.
 
-```
+
 # GOCACHE: Directory for cached build results. 
 
 The GOCACHE environment variable in Go specifies the directory where the Go toolchain stores cached build results. This cache significantly speeds up subsequent builds by reusing results from previous builds when possible.
@@ -33,6 +35,7 @@ The GOCACHE environment variable in Go specifies the directory where the Go tool
 Default Location: By default, GOCACHE is set to a directory under the system's cache directory, such as $HOME/.cache/go-build on Unix systems or %LOCALAPPDATA%\go-build on Windows.
 
 Setting GOCACHE:
+
 ```
 export GOCACHE=/path/to/custom/cache
 
